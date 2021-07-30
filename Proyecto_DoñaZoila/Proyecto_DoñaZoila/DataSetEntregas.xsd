@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetEntregas" targetNamespace="http://tempuri.org/DataSetEntregas.xsd" xmlns:mstns="http://tempuri.org/DataSetEntregas.xsd" xmlns="http://tempuri.org/DataSetEntregas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ProductosDoñaZoilaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ProductosDoñaZoilaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Proyecto_DoñaZoila.Properties.Settings.GlobalReference.Default.ProductosDoñaZoilaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_ReporteEntregasTableAdapter" GeneratorDataComponentClassName="View_ReporteEntregasTableAdapter" Name="View_ReporteEntregas" UserDataComponentName="View_ReporteEntregasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ProductosDoñaZoilaConnectionString (Settings)" DbObjectName="ProductosDoñaZoila.dbo.View_ReporteEntregas" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Codigo_Entrega, nombreProducto, Nombre_Cliente, Sub_Total, fecha, Cantidad_Impuesto, Total FROM dbo.View_ReporteEntregas</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Codigo_Entrega" DataSetColumn="Codigo_Entrega" />
+              <Mapping SourceColumn="nombreProducto" DataSetColumn="nombreProducto" />
+              <Mapping SourceColumn="Nombre_Cliente" DataSetColumn="Nombre_Cliente" />
+              <Mapping SourceColumn="Sub_Total" DataSetColumn="Sub_Total" />
+              <Mapping SourceColumn="fecha" DataSetColumn="fecha" />
+              <Mapping SourceColumn="Cantidad_Impuesto" DataSetColumn="Cantidad_Impuesto" />
+              <Mapping SourceColumn="Total" DataSetColumn="Total" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetEntregas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetEntregas" msprop:Generator_UserDSName="DataSetEntregas">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_ReporteEntregas" msprop:Generator_TableClassName="View_ReporteEntregasDataTable" msprop:Generator_TableVarName="tableView_ReporteEntregas" msprop:Generator_TablePropName="View_ReporteEntregas" msprop:Generator_RowDeletingName="View_ReporteEntregasRowDeleting" msprop:Generator_RowChangingName="View_ReporteEntregasRowChanging" msprop:Generator_RowEvHandlerName="View_ReporteEntregasRowChangeEventHandler" msprop:Generator_RowDeletedName="View_ReporteEntregasRowDeleted" msprop:Generator_UserTableName="View_ReporteEntregas" msprop:Generator_RowChangedName="View_ReporteEntregasRowChanged" msprop:Generator_RowEvArgName="View_ReporteEntregasRowChangeEvent" msprop:Generator_RowClassName="View_ReporteEntregasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Codigo_Entrega" msprop:Generator_ColumnVarNameInTable="columnCodigo_Entrega" msprop:Generator_ColumnPropNameInRow="Codigo_Entrega" msprop:Generator_ColumnPropNameInTable="Codigo_EntregaColumn" msprop:Generator_UserColumnName="Codigo_Entrega" type="xs:int" />
+              <xs:element name="nombreProducto" msprop:Generator_ColumnVarNameInTable="columnnombreProducto" msprop:Generator_ColumnPropNameInRow="nombreProducto" msprop:Generator_ColumnPropNameInTable="nombreProductoColumn" msprop:Generator_UserColumnName="nombreProducto">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre_Cliente" msprop:Generator_ColumnVarNameInTable="columnNombre_Cliente" msprop:Generator_ColumnPropNameInRow="Nombre_Cliente" msprop:Generator_ColumnPropNameInTable="Nombre_ClienteColumn" msprop:Generator_UserColumnName="Nombre_Cliente">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sub_Total" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSub_Total" msprop:Generator_ColumnPropNameInRow="Sub_Total" msprop:Generator_ColumnPropNameInTable="Sub_TotalColumn" msprop:Generator_UserColumnName="Sub_Total" type="xs:double" minOccurs="0" />
+              <xs:element name="fecha" msprop:Generator_ColumnVarNameInTable="columnfecha" msprop:Generator_ColumnPropNameInRow="fecha" msprop:Generator_ColumnPropNameInTable="fechaColumn" msprop:Generator_UserColumnName="fecha" type="xs:dateTime" />
+              <xs:element name="Cantidad_Impuesto" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCantidad_Impuesto" msprop:Generator_ColumnPropNameInRow="Cantidad_Impuesto" msprop:Generator_ColumnPropNameInTable="Cantidad_ImpuestoColumn" msprop:Generator_UserColumnName="Cantidad_Impuesto" type="xs:double" minOccurs="0" />
+              <xs:element name="Total" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

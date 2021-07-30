@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetCostos" targetNamespace="http://tempuri.org/DataSetCostos.xsd" xmlns:mstns="http://tempuri.org/DataSetCostos.xsd" xmlns="http://tempuri.org/DataSetCostos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ProductosDoñaZoilaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ProductosDoñaZoilaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Proyecto_DoñaZoila.Properties.Settings.GlobalReference.Default.ProductosDoñaZoilaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_ReporteCostosTableAdapter" GeneratorDataComponentClassName="View_ReporteCostosTableAdapter" Name="View_ReporteCostos" UserDataComponentName="View_ReporteCostosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ProductosDoñaZoilaConnectionString (Settings)" DbObjectName="ProductosDoñaZoila.dbo.View_ReporteCostos" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CostoLuz, CostoGasolina, CostoAdicional, CostoAgua, CostoMantenimiento, Total_Costos, Fecha FROM dbo.View_ReporteCostos</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CostoLuz" DataSetColumn="CostoLuz" />
+              <Mapping SourceColumn="CostoGasolina" DataSetColumn="CostoGasolina" />
+              <Mapping SourceColumn="CostoAdicional" DataSetColumn="CostoAdicional" />
+              <Mapping SourceColumn="CostoAgua" DataSetColumn="CostoAgua" />
+              <Mapping SourceColumn="CostoMantenimiento" DataSetColumn="CostoMantenimiento" />
+              <Mapping SourceColumn="Total_Costos" DataSetColumn="Total_Costos" />
+              <Mapping SourceColumn="Fecha" DataSetColumn="Fecha" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetCostos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetCostos" msprop:Generator_UserDSName="DataSetCostos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_ReporteCostos" msprop:Generator_TableClassName="View_ReporteCostosDataTable" msprop:Generator_TableVarName="tableView_ReporteCostos" msprop:Generator_TablePropName="View_ReporteCostos" msprop:Generator_RowDeletingName="View_ReporteCostosRowDeleting" msprop:Generator_RowChangingName="View_ReporteCostosRowChanging" msprop:Generator_RowEvHandlerName="View_ReporteCostosRowChangeEventHandler" msprop:Generator_RowDeletedName="View_ReporteCostosRowDeleted" msprop:Generator_UserTableName="View_ReporteCostos" msprop:Generator_RowChangedName="View_ReporteCostosRowChanged" msprop:Generator_RowEvArgName="View_ReporteCostosRowChangeEvent" msprop:Generator_RowClassName="View_ReporteCostosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CostoLuz" msprop:Generator_ColumnVarNameInTable="columnCostoLuz" msprop:Generator_ColumnPropNameInRow="CostoLuz" msprop:Generator_ColumnPropNameInTable="CostoLuzColumn" msprop:Generator_UserColumnName="CostoLuz" type="xs:double" />
+              <xs:element name="CostoGasolina" msprop:Generator_ColumnVarNameInTable="columnCostoGasolina" msprop:Generator_ColumnPropNameInRow="CostoGasolina" msprop:Generator_ColumnPropNameInTable="CostoGasolinaColumn" msprop:Generator_UserColumnName="CostoGasolina" type="xs:double" />
+              <xs:element name="CostoAdicional" msprop:Generator_ColumnVarNameInTable="columnCostoAdicional" msprop:Generator_ColumnPropNameInRow="CostoAdicional" msprop:Generator_ColumnPropNameInTable="CostoAdicionalColumn" msprop:Generator_UserColumnName="CostoAdicional" type="xs:double" />
+              <xs:element name="CostoAgua" msprop:Generator_ColumnVarNameInTable="columnCostoAgua" msprop:Generator_ColumnPropNameInRow="CostoAgua" msprop:Generator_ColumnPropNameInTable="CostoAguaColumn" msprop:Generator_UserColumnName="CostoAgua" type="xs:double" />
+              <xs:element name="CostoMantenimiento" msprop:Generator_ColumnVarNameInTable="columnCostoMantenimiento" msprop:Generator_ColumnPropNameInRow="CostoMantenimiento" msprop:Generator_ColumnPropNameInTable="CostoMantenimientoColumn" msprop:Generator_UserColumnName="CostoMantenimiento" type="xs:double" />
+              <xs:element name="Total_Costos" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotal_Costos" msprop:Generator_ColumnPropNameInRow="Total_Costos" msprop:Generator_ColumnPropNameInTable="Total_CostosColumn" msprop:Generator_UserColumnName="Total_Costos" type="xs:double" minOccurs="0" />
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
