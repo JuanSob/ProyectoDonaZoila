@@ -24,6 +24,14 @@ namespace Proyecto_DoñaZoila
         public FrmInicioSesion()
         {
             InitializeComponent();
+            validacionTextbox();
+        }
+
+        //Metodo para evitar que copien y peguen
+        public void validacionTextbox()
+        {
+            txtUsuario.ShortcutsEnabled = false;
+            txtContrasena.ShortcutsEnabled = false;
         }
         
         //Programacion Labels
