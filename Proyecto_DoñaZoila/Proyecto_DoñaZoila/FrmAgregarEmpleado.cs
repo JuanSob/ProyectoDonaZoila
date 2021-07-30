@@ -32,6 +32,13 @@ namespace Proyecto_DoñaZoila
             this.Close();
         }
 
+        //Metodo para evitar que copien y peguen
+        public void validacionTextbox()
+        {
+            txtUsuario.ShortcutsEnabled = false;
+            txtContrasena.ShortcutsEnabled = false;
+        }
+
         //Metodo para obtener el codigo del Rol
         private void btnRol_Click(object sender, EventArgs e)
         {
