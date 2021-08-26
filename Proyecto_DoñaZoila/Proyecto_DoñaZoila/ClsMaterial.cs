@@ -14,9 +14,11 @@ namespace Proyecto_DoñaZoila
 
         private static string nombre;
         private static int codigo;
+        private string descripcion;
 
         public string Nombre { get => nombre; set => nombre = value; }
         public int Codigo { get => codigo; set => codigo = value; }
+        public string Descripcion { get => descripcion; set => descripcion = value; }
 
         //Metodo para insertar maerial
         public int NuevoMaterial()
@@ -26,7 +28,7 @@ namespace Proyecto_DoñaZoila
             sc.Open();
             try
             {
-                SqlCommand ins = new SqlCommand("execute insertarMaterial 1,'" + Nombre + "'", sc);
+                SqlCommand ins = new SqlCommand("execute insertarMaterial 1,'" + Nombre + "','" + Descripcion + "'", sc);
                 ins.ExecuteNonQuery();
                 MessageBox.Show("Se añadió el material de manera correcta", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -50,7 +52,7 @@ namespace Proyecto_DoñaZoila
             sc.Open();
             try
             {
-                SqlCommand ins = new SqlCommand("execute insertarMaterial 2,'" + Nombre + "','" + Codigo + "'", sc);
+                SqlCommand ins = new SqlCommand("execute insertarMaterial 2,'" + Nombre + "','" + Descripcion + "','" + Codigo + "'", sc);
                 ins.ExecuteNonQuery();
                 MessageBox.Show("Se cambió el material de manera correcta", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

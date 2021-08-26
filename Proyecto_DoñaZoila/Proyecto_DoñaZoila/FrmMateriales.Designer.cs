@@ -31,13 +31,13 @@ namespace Proyecto_DoñaZoila
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMateriales));
             this.panelMateriales = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnRetornar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.btnRetornar = new System.Windows.Forms.Button();
             this.btnVisualizar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.panelMateriales.SuspendLayout();
@@ -57,55 +57,19 @@ namespace Proyecto_DoñaZoila
             this.panelMateriales.Controls.Add(this.btnAgregar);
             this.panelMateriales.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMateriales.Location = new System.Drawing.Point(0, 0);
+            this.panelMateriales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelMateriales.Name = "panelMateriales";
-            this.panelMateriales.Size = new System.Drawing.Size(824, 508);
+            this.panelMateriales.Size = new System.Drawing.Size(1099, 625);
             this.panelMateriales.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(658, 306);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 24);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Visualizar";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(82, 306);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 24);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Agregar";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(197)))), ((int)(((byte)(159)))));
-            this.panel2.Location = new System.Drawing.Point(0, 67);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(821, 1);
-            this.panel2.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 44);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Materiales";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(369, 306);
+            this.label4.Location = new System.Drawing.Point(492, 377);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 24);
+            this.label4.Size = new System.Drawing.Size(140, 33);
             this.label4.TabIndex = 8;
             this.label4.Text = "Modificar";
             // 
@@ -114,9 +78,10 @@ namespace Proyecto_DoñaZoila
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(197)))), ((int)(((byte)(159)))));
             this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
-            this.btnModificar.Location = new System.Drawing.Point(339, 155);
+            this.btnModificar.Location = new System.Drawing.Point(452, 191);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(161, 137);
+            this.btnModificar.Size = new System.Drawing.Size(215, 169);
             this.btnModificar.TabIndex = 7;
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnModificar.UseVisualStyleBackColor = true;
@@ -130,22 +95,66 @@ namespace Proyecto_DoñaZoila
             this.btnRetornar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRetornar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(197)))), ((int)(((byte)(159)))));
             this.btnRetornar.Image = ((System.Drawing.Image)(resources.GetObject("btnRetornar.Image")));
-            this.btnRetornar.Location = new System.Drawing.Point(748, 434);
+            this.btnRetornar.Location = new System.Drawing.Point(997, 534);
+            this.btnRetornar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRetornar.Name = "btnRetornar";
-            this.btnRetornar.Size = new System.Drawing.Size(76, 62);
+            this.btnRetornar.Size = new System.Drawing.Size(101, 76);
             this.btnRetornar.TabIndex = 6;
             this.btnRetornar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnRetornar.UseVisualStyleBackColor = true;
             this.btnRetornar.Click += new System.EventHandler(this.btnRetornar_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(877, 377);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(133, 33);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Visualizar";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(109, 377);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(122, 33);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Agregar";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(197)))), ((int)(((byte)(159)))));
+            this.panel2.Location = new System.Drawing.Point(0, 82);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1095, 1);
+            this.panel2.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(16, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(552, 57);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Materia Prima / Insumo";
             // 
             // btnVisualizar
             // 
             this.btnVisualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVisualizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(197)))), ((int)(((byte)(159)))));
             this.btnVisualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnVisualizar.Image")));
-            this.btnVisualizar.Location = new System.Drawing.Point(629, 155);
+            this.btnVisualizar.Location = new System.Drawing.Point(839, 191);
+            this.btnVisualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVisualizar.Name = "btnVisualizar";
-            this.btnVisualizar.Size = new System.Drawing.Size(161, 137);
+            this.btnVisualizar.Size = new System.Drawing.Size(215, 169);
             this.btnVisualizar.TabIndex = 1;
             this.btnVisualizar.UseVisualStyleBackColor = true;
             this.btnVisualizar.Click += new System.EventHandler(this.btnVisualizar_Click);
@@ -155,9 +164,10 @@ namespace Proyecto_DoñaZoila
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(197)))), ((int)(((byte)(159)))));
             this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
-            this.btnAgregar.Location = new System.Drawing.Point(54, 155);
+            this.btnAgregar.Location = new System.Drawing.Point(72, 191);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(161, 137);
+            this.btnAgregar.Size = new System.Drawing.Size(215, 169);
             this.btnAgregar.TabIndex = 0;
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -165,11 +175,12 @@ namespace Proyecto_DoñaZoila
             // 
             // FrmMateriales
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 508);
+            this.ClientSize = new System.Drawing.Size(1099, 625);
             this.Controls.Add(this.panelMateriales);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmMateriales";
             this.Text = "FrmMateriales";
             this.panelMateriales.ResumeLayout(false);

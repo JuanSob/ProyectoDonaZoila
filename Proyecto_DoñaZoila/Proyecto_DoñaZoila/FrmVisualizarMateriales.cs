@@ -28,7 +28,7 @@ namespace Proyecto_DoñaZoila
 
         private void FrmMateriales_Load(object sender, EventArgs e)
         {
-            DisplayData();
+            DisplayData(1);
 
             foreach (DataGridViewColumn column in dgvMateriales.Columns)
             {
@@ -42,10 +42,24 @@ namespace Proyecto_DoñaZoila
         }
 
         //Metodo para traer datos al data grid view
-        private void DisplayData()
+        private void DisplayData(int num)
         {
-            cargar.Abrir();
-            cargar.cargaDatos(dgvMateriales, "execute cargarMaterial");
+            if (num == 1)
+            {
+                cargar.Abrir();
+                cargar.cargaDatos(dgvMateriales, "execute cargarMaterial 1");
+            }
+            else
+            if (num == 2)
+            {
+                cargar.Abrir();
+                cargar.cargaDatos(dgvMateriales, "execute cargarMaterial 2");
+            }
+            else
+            {
+                cargar.Abrir();
+                cargar.cargaDatos(dgvMateriales, "execute cargarMaterial 3");
+            }
         }
 
         private void dgvMateriales_DoubleClick(object sender, EventArgs e)
@@ -54,6 +68,18 @@ namespace Proyecto_DoñaZoila
             buscar.CantMaterial = Convert.ToInt32(dgvMateriales.CurrentRow.Cells[2].Value.ToString());
             buscar.NombreMaterial = dgvMateriales.CurrentRow.Cells[1].Value.ToString();
             this.Close();
+        }
+
+        private void cbDescripcion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbDescripcion.SelectedItem.Equals("Todos"))
+                    DisplayData(1);
+            else
+                if (cbDescripcion.SelectedItem.Equals("Insumo"))
+                    DisplayData(2);
+            else
+                if (cbDescripcion.SelectedItem.Equals("Materia Prima"))
+                    DisplayData(3);
         }
     }
 }

@@ -59,7 +59,7 @@ namespace Proyecto_DoñaZoila
             empleado.Viatico = Convert.ToDouble(txtViaticos.Text);
             empleado.Debito = Convert.ToDouble(txtDebito.Text);
             empleado.Aguinaldo = Convert.ToDouble(txtAguinaldo.Text);
-            empleado.RazonDebito = txtAguinaldo.Text;
+            empleado.RazonDebito = cbDebito.SelectedItem.ToString();
         }
 
         //Metodo para limpiar los textbox

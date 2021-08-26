@@ -29,17 +29,19 @@ namespace Proyecto_DoñaZoila
         public void CapturarDatos()
         {
             material.Nombre = txtNombre.Text;
+            material.Descripcion = cbDescripcion.SelectedItem.ToString();
         }
 
         //Metodo para poder limpiar todos los campos
         public void LimpiarCampos()
         {
             txtNombre.Clear();
+            cbDescripcion.SelectedIndex = -1;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (txtNombre.Text == "")
+            if (txtNombre.Text == "" || cbDescripcion.SelectedIndex.Equals(-1))
             {
                 MessageBox.Show("Llene todos los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }

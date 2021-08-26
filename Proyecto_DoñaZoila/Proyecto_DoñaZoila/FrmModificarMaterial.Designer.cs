@@ -29,8 +29,8 @@ namespace Proyecto_DoñaZoila
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmModificarMaterial));
             this.panelModificarMateriales = new System.Windows.Forms.Panel();
             this.txtCodigo = new System.Windows.Forms.TextBox();
@@ -44,6 +44,8 @@ namespace Proyecto_DoñaZoila
             this.btnRetornar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.cbDescripcion = new System.Windows.Forms.ComboBox();
             this.panelModificarMateriales.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMateriales)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -52,6 +54,8 @@ namespace Proyecto_DoñaZoila
             // panelModificarMateriales
             // 
             this.panelModificarMateriales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(248)))), ((int)(((byte)(239)))));
+            this.panelModificarMateriales.Controls.Add(this.label18);
+            this.panelModificarMateriales.Controls.Add(this.cbDescripcion);
             this.panelModificarMateriales.Controls.Add(this.txtCodigo);
             this.panelModificarMateriales.Controls.Add(this.label2);
             this.panelModificarMateriales.Controls.Add(this.dgvMateriales);
@@ -100,14 +104,14 @@ namespace Proyecto_DoñaZoila
             this.dgvMateriales.BackgroundColor = System.Drawing.Color.White;
             this.dgvMateriales.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMateriales.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMateriales.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(31)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMateriales.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMateriales.ColumnHeadersHeight = 35;
             this.dgvMateriales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvMateriales.EnableHeadersVisualStyles = false;
@@ -118,12 +122,12 @@ namespace Proyecto_DoñaZoila
             this.dgvMateriales.ReadOnly = true;
             this.dgvMateriales.RowHeadersVisible = false;
             this.dgvMateriales.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Tan;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvMateriales.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Tan;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvMateriales.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvMateriales.RowTemplate.Height = 24;
             this.dgvMateriales.Size = new System.Drawing.Size(975, 154);
             this.dgvMateriales.TabIndex = 71;
@@ -147,7 +151,7 @@ namespace Proyecto_DoñaZoila
             this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(197)))), ((int)(((byte)(159)))));
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(275, 314);
+            this.btnCancelar.Location = new System.Drawing.Point(273, 345);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(124, 39);
@@ -163,7 +167,7 @@ namespace Proyecto_DoñaZoila
             this.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(197)))), ((int)(((byte)(159)))));
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(109, 314);
+            this.btnModificar.Location = new System.Drawing.Point(83, 345);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(129, 39);
@@ -215,9 +219,9 @@ namespace Proyecto_DoñaZoila
             this.label1.Location = new System.Drawing.Point(4, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(261, 57);
+            this.label1.Size = new System.Drawing.Size(552, 57);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Materiales";
+            this.label1.Text = "Materia Prima / Insumo";
             // 
             // panel2
             // 
@@ -227,6 +231,30 @@ namespace Proyecto_DoñaZoila
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1095, 1);
             this.panel2.TabIndex = 4;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(13, 269);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(121, 22);
+            this.label18.TabIndex = 75;
+            this.label18.Text = "Descripción:";
+            // 
+            // cbDescripcion
+            // 
+            this.cbDescripcion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDescripcion.FormattingEnabled = true;
+            this.cbDescripcion.Items.AddRange(new object[] {
+            "Insumo",
+            "Materia Prima"});
+            this.cbDescripcion.Location = new System.Drawing.Point(231, 267);
+            this.cbDescripcion.Margin = new System.Windows.Forms.Padding(4);
+            this.cbDescripcion.Name = "cbDescripcion";
+            this.cbDescripcion.Size = new System.Drawing.Size(205, 24);
+            this.cbDescripcion.TabIndex = 74;
             // 
             // FrmModificarMaterial
             // 
@@ -260,5 +288,7 @@ namespace Proyecto_DoñaZoila
         private System.Windows.Forms.DataGridView dgvMateriales;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.ComboBox cbDescripcion;
     }
 }

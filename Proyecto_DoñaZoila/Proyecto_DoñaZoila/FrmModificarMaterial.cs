@@ -39,23 +39,32 @@ namespace Proyecto_DoñaZoila
         {
             material.Nombre = txtNombre.Text;
             material.Codigo = Convert.ToInt32(txtCodigo.Text);
+            material.Descripcion = cbDescripcion.SelectedItem.ToString();
         }
 
         //Metodo para poder limpiar todos los campos
         public void LimpiarCampos()
         {
+            cbDescripcion.SelectedIndex = -1;
             txtNombre.Clear();
             txtCodigo.Clear();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            CapturarDatos();
-
-            if(material.ModificarMaterial()==1)
+            if (txtNombre.Text == "" || cbDescripcion.SelectedIndex.Equals(-1))
             {
-                LimpiarCampos();
-                DisplayData();
+                MessageBox.Show("Llene todos los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                CapturarDatos();
+
+                if (material.ModificarMaterial() == 1)
+                {
+                    LimpiarCampos();
+                    DisplayData();
+                }
             }
         }
 
@@ -68,6 +77,7 @@ namespace Proyecto_DoñaZoila
         {
             txtCodigo.Text = dgvMateriales.Rows[dgvMateriales.CurrentRow.Index].Cells[0].Value.ToString();
             txtNombre.Text = dgvMateriales.Rows[dgvMateriales.CurrentRow.Index].Cells[1].Value.ToString();
+            cbDescripcion.SelectedItem = dgvMateriales.Rows[dgvMateriales.CurrentRow.Index].Cells[3].Value.ToString();
         }
     }
 }

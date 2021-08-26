@@ -43,6 +43,7 @@ namespace Proyecto_DoñaZoila
             this.btnZonas = new System.Windows.Forms.Button();
             this.btnVentas = new System.Windows.Forms.Button();
             this.panelOtros = new System.Windows.Forms.Panel();
+            this.btnMapa = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
             this.btnCostosFijos = new System.Windows.Forms.Button();
             this.btnOtros = new System.Windows.Forms.Button();
@@ -67,7 +68,6 @@ namespace Proyecto_DoñaZoila
             this.lblNombre = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnMapa = new System.Windows.Forms.Button();
             this.panelCabecera.SuspendLayout();
             this.panelLateral.SuspendLayout();
             this.panelVentas.SuspendLayout();
@@ -88,8 +88,9 @@ namespace Proyecto_DoñaZoila
             this.panelCabecera.Controls.Add(this.btnCerrar);
             this.panelCabecera.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelCabecera.Location = new System.Drawing.Point(0, 0);
+            this.panelCabecera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelCabecera.Name = "panelCabecera";
-            this.panelCabecera.Size = new System.Drawing.Size(1040, 40);
+            this.panelCabecera.Size = new System.Drawing.Size(1387, 49);
             this.panelCabecera.TabIndex = 0;
             this.panelCabecera.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelCabecera_MouseDown);
             // 
@@ -102,9 +103,10 @@ namespace Proyecto_DoñaZoila
             this.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
             this.btnMinimizar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnMinimizar.Location = new System.Drawing.Point(954, 0);
+            this.btnMinimizar.Location = new System.Drawing.Point(1272, 0);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(40, 40);
+            this.btnMinimizar.Size = new System.Drawing.Size(53, 49);
             this.btnMinimizar.TabIndex = 1;
             this.btnMinimizar.UseVisualStyleBackColor = true;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
@@ -117,9 +119,10 @@ namespace Proyecto_DoñaZoila
             this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1000, 0);
+            this.btnCerrar.Location = new System.Drawing.Point(1333, 0);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(40, 40);
+            this.btnCerrar.Size = new System.Drawing.Size(53, 49);
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
@@ -139,9 +142,10 @@ namespace Proyecto_DoñaZoila
             this.panelLateral.Controls.Add(this.btnEmpleado);
             this.panelLateral.Controls.Add(this.panelLogo);
             this.panelLateral.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLateral.Location = new System.Drawing.Point(0, 40);
+            this.panelLateral.Location = new System.Drawing.Point(0, 49);
+            this.panelLateral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelLateral.Name = "panelLateral";
-            this.panelLateral.Size = new System.Drawing.Size(219, 501);
+            this.panelLateral.Size = new System.Drawing.Size(292, 617);
             this.panelLateral.TabIndex = 1;
             // 
             // panelVentas
@@ -153,9 +157,10 @@ namespace Proyecto_DoñaZoila
             this.panelVentas.Controls.Add(this.btnClientes);
             this.panelVentas.Controls.Add(this.btnZonas);
             this.panelVentas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelVentas.Location = new System.Drawing.Point(0, 646);
+            this.panelVentas.Location = new System.Drawing.Point(0, 793);
+            this.panelVentas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelVentas.Name = "panelVentas";
-            this.panelVentas.Size = new System.Drawing.Size(202, 201);
+            this.panelVentas.Size = new System.Drawing.Size(271, 247);
             this.panelVentas.TabIndex = 25;
             // 
             // btnViaje
@@ -170,10 +175,11 @@ namespace Proyecto_DoñaZoila
             this.btnViaje.ForeColor = System.Drawing.Color.White;
             this.btnViaje.Image = ((System.Drawing.Image)(resources.GetObject("btnViaje.Image")));
             this.btnViaje.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnViaje.Location = new System.Drawing.Point(0, 160);
+            this.btnViaje.Location = new System.Drawing.Point(0, 196);
+            this.btnViaje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnViaje.Name = "btnViaje";
-            this.btnViaje.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnViaje.Size = new System.Drawing.Size(202, 40);
+            this.btnViaje.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btnViaje.Size = new System.Drawing.Size(271, 49);
             this.btnViaje.TabIndex = 9;
             this.btnViaje.Text = "Viajes";
             this.btnViaje.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -193,10 +199,11 @@ namespace Proyecto_DoñaZoila
             this.btnEntrega.ForeColor = System.Drawing.Color.White;
             this.btnEntrega.Image = ((System.Drawing.Image)(resources.GetObject("btnEntrega.Image")));
             this.btnEntrega.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEntrega.Location = new System.Drawing.Point(0, 120);
+            this.btnEntrega.Location = new System.Drawing.Point(0, 147);
+            this.btnEntrega.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEntrega.Name = "btnEntrega";
-            this.btnEntrega.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnEntrega.Size = new System.Drawing.Size(202, 40);
+            this.btnEntrega.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btnEntrega.Size = new System.Drawing.Size(271, 49);
             this.btnEntrega.TabIndex = 8;
             this.btnEntrega.Text = "Entrega";
             this.btnEntrega.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -216,10 +223,11 @@ namespace Proyecto_DoñaZoila
             this.btnVehiculos.ForeColor = System.Drawing.Color.White;
             this.btnVehiculos.Image = ((System.Drawing.Image)(resources.GetObject("btnVehiculos.Image")));
             this.btnVehiculos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVehiculos.Location = new System.Drawing.Point(0, 80);
+            this.btnVehiculos.Location = new System.Drawing.Point(0, 98);
+            this.btnVehiculos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVehiculos.Name = "btnVehiculos";
-            this.btnVehiculos.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnVehiculos.Size = new System.Drawing.Size(202, 40);
+            this.btnVehiculos.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btnVehiculos.Size = new System.Drawing.Size(271, 49);
             this.btnVehiculos.TabIndex = 7;
             this.btnVehiculos.Text = "Vehiculos";
             this.btnVehiculos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -239,10 +247,11 @@ namespace Proyecto_DoñaZoila
             this.btnClientes.ForeColor = System.Drawing.Color.White;
             this.btnClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnClientes.Image")));
             this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.Location = new System.Drawing.Point(0, 40);
+            this.btnClientes.Location = new System.Drawing.Point(0, 49);
+            this.btnClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnClientes.Size = new System.Drawing.Size(202, 40);
+            this.btnClientes.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btnClientes.Size = new System.Drawing.Size(271, 49);
             this.btnClientes.TabIndex = 6;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -263,9 +272,10 @@ namespace Proyecto_DoñaZoila
             this.btnZonas.Image = ((System.Drawing.Image)(resources.GetObject("btnZonas.Image")));
             this.btnZonas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnZonas.Location = new System.Drawing.Point(0, 0);
+            this.btnZonas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnZonas.Name = "btnZonas";
-            this.btnZonas.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnZonas.Size = new System.Drawing.Size(202, 40);
+            this.btnZonas.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btnZonas.Size = new System.Drawing.Size(271, 49);
             this.btnZonas.TabIndex = 5;
             this.btnZonas.Text = "Zonas";
             this.btnZonas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -285,10 +295,11 @@ namespace Proyecto_DoñaZoila
             this.btnVentas.ForeColor = System.Drawing.Color.White;
             this.btnVentas.Image = ((System.Drawing.Image)(resources.GetObject("btnVentas.Image")));
             this.btnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVentas.Location = new System.Drawing.Point(0, 601);
+            this.btnVentas.Location = new System.Drawing.Point(0, 738);
+            this.btnVentas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVentas.Name = "btnVentas";
-            this.btnVentas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnVentas.Size = new System.Drawing.Size(202, 45);
+            this.btnVentas.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnVentas.Size = new System.Drawing.Size(271, 55);
             this.btnVentas.TabIndex = 24;
             this.btnVentas.Text = "Ventas";
             this.btnVentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -303,10 +314,35 @@ namespace Proyecto_DoñaZoila
             this.panelOtros.Controls.Add(this.btnReportes);
             this.panelOtros.Controls.Add(this.btnCostosFijos);
             this.panelOtros.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelOtros.Location = new System.Drawing.Point(0, 479);
+            this.panelOtros.Location = new System.Drawing.Point(0, 588);
+            this.panelOtros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelOtros.Name = "panelOtros";
-            this.panelOtros.Size = new System.Drawing.Size(202, 122);
+            this.panelOtros.Size = new System.Drawing.Size(271, 150);
             this.panelOtros.TabIndex = 23;
+            // 
+            // btnMapa
+            // 
+            this.btnMapa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
+            this.btnMapa.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMapa.FlatAppearance.BorderSize = 0;
+            this.btnMapa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnMapa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnMapa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMapa.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMapa.ForeColor = System.Drawing.Color.White;
+            this.btnMapa.Image = ((System.Drawing.Image)(resources.GetObject("btnMapa.Image")));
+            this.btnMapa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMapa.Location = new System.Drawing.Point(0, 98);
+            this.btnMapa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMapa.Name = "btnMapa";
+            this.btnMapa.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btnMapa.Size = new System.Drawing.Size(271, 49);
+            this.btnMapa.TabIndex = 7;
+            this.btnMapa.Text = "Mapa";
+            this.btnMapa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMapa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMapa.UseVisualStyleBackColor = false;
+            this.btnMapa.Click += new System.EventHandler(this.btnMapa_Click);
             // 
             // btnReportes
             // 
@@ -320,10 +356,11 @@ namespace Proyecto_DoñaZoila
             this.btnReportes.ForeColor = System.Drawing.Color.White;
             this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(0, 40);
+            this.btnReportes.Location = new System.Drawing.Point(0, 49);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnReportes.Size = new System.Drawing.Size(202, 40);
+            this.btnReportes.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btnReportes.Size = new System.Drawing.Size(271, 49);
             this.btnReportes.TabIndex = 6;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -344,9 +381,10 @@ namespace Proyecto_DoñaZoila
             this.btnCostosFijos.Image = ((System.Drawing.Image)(resources.GetObject("btnCostosFijos.Image")));
             this.btnCostosFijos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCostosFijos.Location = new System.Drawing.Point(0, 0);
+            this.btnCostosFijos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCostosFijos.Name = "btnCostosFijos";
-            this.btnCostosFijos.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnCostosFijos.Size = new System.Drawing.Size(202, 40);
+            this.btnCostosFijos.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btnCostosFijos.Size = new System.Drawing.Size(271, 49);
             this.btnCostosFijos.TabIndex = 5;
             this.btnCostosFijos.Text = "Costos";
             this.btnCostosFijos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -366,10 +404,11 @@ namespace Proyecto_DoñaZoila
             this.btnOtros.ForeColor = System.Drawing.Color.White;
             this.btnOtros.Image = ((System.Drawing.Image)(resources.GetObject("btnOtros.Image")));
             this.btnOtros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOtros.Location = new System.Drawing.Point(0, 434);
+            this.btnOtros.Location = new System.Drawing.Point(0, 533);
+            this.btnOtros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOtros.Name = "btnOtros";
-            this.btnOtros.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnOtros.Size = new System.Drawing.Size(202, 45);
+            this.btnOtros.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnOtros.Size = new System.Drawing.Size(271, 55);
             this.btnOtros.TabIndex = 22;
             this.btnOtros.Text = "Otros";
             this.btnOtros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -385,9 +424,10 @@ namespace Proyecto_DoñaZoila
             this.panelInventario.Controls.Add(this.btnProveedores);
             this.panelInventario.Controls.Add(this.btnOrdenMateriales);
             this.panelInventario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelInventario.Location = new System.Drawing.Point(0, 272);
+            this.panelInventario.Location = new System.Drawing.Point(0, 334);
+            this.panelInventario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelInventario.Name = "panelInventario";
-            this.panelInventario.Size = new System.Drawing.Size(202, 162);
+            this.panelInventario.Size = new System.Drawing.Size(271, 199);
             this.panelInventario.TabIndex = 21;
             // 
             // btnProductos
@@ -402,10 +442,11 @@ namespace Proyecto_DoñaZoila
             this.btnProductos.ForeColor = System.Drawing.Color.White;
             this.btnProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnProductos.Image")));
             this.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductos.Location = new System.Drawing.Point(0, 120);
+            this.btnProductos.Location = new System.Drawing.Point(0, 147);
+            this.btnProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnProductos.Size = new System.Drawing.Size(202, 40);
+            this.btnProductos.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btnProductos.Size = new System.Drawing.Size(271, 49);
             this.btnProductos.TabIndex = 8;
             this.btnProductos.Text = "Productos";
             this.btnProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -425,12 +466,13 @@ namespace Proyecto_DoñaZoila
             this.btnMateriales.ForeColor = System.Drawing.Color.White;
             this.btnMateriales.Image = ((System.Drawing.Image)(resources.GetObject("btnMateriales.Image")));
             this.btnMateriales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMateriales.Location = new System.Drawing.Point(0, 80);
+            this.btnMateriales.Location = new System.Drawing.Point(0, 98);
+            this.btnMateriales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMateriales.Name = "btnMateriales";
-            this.btnMateriales.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnMateriales.Size = new System.Drawing.Size(202, 40);
+            this.btnMateriales.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btnMateriales.Size = new System.Drawing.Size(271, 49);
             this.btnMateriales.TabIndex = 7;
-            this.btnMateriales.Text = "Materiales";
+            this.btnMateriales.Text = "Material / Insumo";
             this.btnMateriales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMateriales.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMateriales.UseVisualStyleBackColor = false;
@@ -448,10 +490,11 @@ namespace Proyecto_DoñaZoila
             this.btnProveedores.ForeColor = System.Drawing.Color.White;
             this.btnProveedores.Image = ((System.Drawing.Image)(resources.GetObject("btnProveedores.Image")));
             this.btnProveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProveedores.Location = new System.Drawing.Point(0, 40);
+            this.btnProveedores.Location = new System.Drawing.Point(0, 49);
+            this.btnProveedores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnProveedores.Size = new System.Drawing.Size(202, 40);
+            this.btnProveedores.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btnProveedores.Size = new System.Drawing.Size(271, 49);
             this.btnProveedores.TabIndex = 6;
             this.btnProveedores.Text = "Proveedores";
             this.btnProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -472,9 +515,10 @@ namespace Proyecto_DoñaZoila
             this.btnOrdenMateriales.Image = ((System.Drawing.Image)(resources.GetObject("btnOrdenMateriales.Image")));
             this.btnOrdenMateriales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOrdenMateriales.Location = new System.Drawing.Point(0, 0);
+            this.btnOrdenMateriales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOrdenMateriales.Name = "btnOrdenMateriales";
-            this.btnOrdenMateriales.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnOrdenMateriales.Size = new System.Drawing.Size(202, 40);
+            this.btnOrdenMateriales.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btnOrdenMateriales.Size = new System.Drawing.Size(271, 49);
             this.btnOrdenMateriales.TabIndex = 5;
             this.btnOrdenMateriales.Text = "Ordenes";
             this.btnOrdenMateriales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -494,10 +538,11 @@ namespace Proyecto_DoñaZoila
             this.btnInventario.ForeColor = System.Drawing.Color.White;
             this.btnInventario.Image = ((System.Drawing.Image)(resources.GetObject("btnInventario.Image")));
             this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInventario.Location = new System.Drawing.Point(0, 227);
+            this.btnInventario.Location = new System.Drawing.Point(0, 279);
+            this.btnInventario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInventario.Name = "btnInventario";
-            this.btnInventario.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnInventario.Size = new System.Drawing.Size(202, 45);
+            this.btnInventario.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnInventario.Size = new System.Drawing.Size(271, 55);
             this.btnInventario.TabIndex = 19;
             this.btnInventario.Text = "Inventario";
             this.btnInventario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -517,10 +562,11 @@ namespace Proyecto_DoñaZoila
             this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
             this.btnCerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarSesion.Image")));
             this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrarSesion.Location = new System.Drawing.Point(0, 847);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(0, 1040);
+            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnCerrarSesion.Size = new System.Drawing.Size(202, 45);
+            this.btnCerrarSesion.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btnCerrarSesion.Size = new System.Drawing.Size(271, 55);
             this.btnCerrarSesion.TabIndex = 18;
             this.btnCerrarSesion.Text = "Cerrar sesión";
             this.btnCerrarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -534,9 +580,10 @@ namespace Proyecto_DoñaZoila
             this.panelEmpleado.Controls.Add(this.btnPlanilla);
             this.panelEmpleado.Controls.Add(this.btnRegistro);
             this.panelEmpleado.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelEmpleado.Location = new System.Drawing.Point(0, 145);
+            this.panelEmpleado.Location = new System.Drawing.Point(0, 178);
+            this.panelEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelEmpleado.Name = "panelEmpleado";
-            this.panelEmpleado.Size = new System.Drawing.Size(202, 82);
+            this.panelEmpleado.Size = new System.Drawing.Size(271, 101);
             this.panelEmpleado.TabIndex = 17;
             // 
             // btnPlanilla
@@ -551,10 +598,11 @@ namespace Proyecto_DoñaZoila
             this.btnPlanilla.ForeColor = System.Drawing.Color.White;
             this.btnPlanilla.Image = ((System.Drawing.Image)(resources.GetObject("btnPlanilla.Image")));
             this.btnPlanilla.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlanilla.Location = new System.Drawing.Point(0, 40);
+            this.btnPlanilla.Location = new System.Drawing.Point(0, 49);
+            this.btnPlanilla.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPlanilla.Name = "btnPlanilla";
-            this.btnPlanilla.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnPlanilla.Size = new System.Drawing.Size(202, 40);
+            this.btnPlanilla.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btnPlanilla.Size = new System.Drawing.Size(271, 49);
             this.btnPlanilla.TabIndex = 6;
             this.btnPlanilla.Text = "Planilla";
             this.btnPlanilla.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -575,9 +623,10 @@ namespace Proyecto_DoñaZoila
             this.btnRegistro.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistro.Image")));
             this.btnRegistro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegistro.Location = new System.Drawing.Point(0, 0);
+            this.btnRegistro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegistro.Name = "btnRegistro";
-            this.btnRegistro.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnRegistro.Size = new System.Drawing.Size(202, 40);
+            this.btnRegistro.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
+            this.btnRegistro.Size = new System.Drawing.Size(271, 49);
             this.btnRegistro.TabIndex = 5;
             this.btnRegistro.Text = "Registro";
             this.btnRegistro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -597,10 +646,11 @@ namespace Proyecto_DoñaZoila
             this.btnEmpleado.ForeColor = System.Drawing.Color.White;
             this.btnEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpleado.Image")));
             this.btnEmpleado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmpleado.Location = new System.Drawing.Point(0, 100);
+            this.btnEmpleado.Location = new System.Drawing.Point(0, 123);
+            this.btnEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEmpleado.Name = "btnEmpleado";
-            this.btnEmpleado.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnEmpleado.Size = new System.Drawing.Size(202, 45);
+            this.btnEmpleado.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
+            this.btnEmpleado.Size = new System.Drawing.Size(271, 55);
             this.btnEmpleado.TabIndex = 4;
             this.btnEmpleado.Text = "Empleado";
             this.btnEmpleado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -613,16 +663,18 @@ namespace Proyecto_DoñaZoila
             this.panelLogo.Controls.Add(this.pictureBox1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(202, 100);
+            this.panelLogo.Size = new System.Drawing.Size(271, 123);
             this.panelLogo.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(219, 100);
+            this.pictureBox1.Size = new System.Drawing.Size(292, 123);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -637,18 +689,20 @@ namespace Proyecto_DoñaZoila
             this.panelCentral.Controls.Add(this.lblNombre);
             this.panelCentral.Controls.Add(this.label1);
             this.panelCentral.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelCentral.Location = new System.Drawing.Point(219, 40);
+            this.panelCentral.Location = new System.Drawing.Point(292, 49);
+            this.panelCentral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelCentral.Name = "panelCentral";
-            this.panelCentral.Size = new System.Drawing.Size(821, 501);
+            this.panelCentral.Size = new System.Drawing.Size(1095, 617);
             this.panelCentral.TabIndex = 2;
             this.panelCentral.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelCentral_MouseDown);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(186, 6);
+            this.pictureBox3.Location = new System.Drawing.Point(248, 7);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(103, 101);
+            this.pictureBox3.Size = new System.Drawing.Size(137, 124);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
@@ -657,10 +711,9 @@ namespace Proyecto_DoñaZoila
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(322, 457);
-            this.lblFecha.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFecha.Location = new System.Drawing.Point(429, 562);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(102, 31);
+            this.lblFecha.Size = new System.Drawing.Size(125, 39);
             this.lblFecha.TabIndex = 3;
             this.lblFecha.Text = "-_-_-_-";
             // 
@@ -668,19 +721,19 @@ namespace Proyecto_DoñaZoila
             // 
             this.lblHora.AutoSize = true;
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(120, 457);
-            this.lblHora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblHora.Location = new System.Drawing.Point(160, 562);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(102, 31);
+            this.lblHora.Size = new System.Drawing.Size(125, 39);
             this.lblHora.TabIndex = 2;
             this.lblHora.Text = "-_-_-_-";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(230, 113);
+            this.pictureBox2.Location = new System.Drawing.Point(307, 139);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(417, 310);
+            this.pictureBox2.Size = new System.Drawing.Size(556, 382);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -689,10 +742,9 @@ namespace Proyecto_DoñaZoila
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(453, 42);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombre.Location = new System.Drawing.Point(604, 52);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(102, 31);
+            this.lblNombre.Size = new System.Drawing.Size(125, 39);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "-_-_-_-";
             // 
@@ -700,10 +752,9 @@ namespace Proyecto_DoñaZoila
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(284, 42);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(379, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 31);
+            this.label1.Size = new System.Drawing.Size(112, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "¡Hola!";
             // 
@@ -712,38 +763,16 @@ namespace Proyecto_DoñaZoila
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // btnMapa
-            // 
-            this.btnMapa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(101)))), ((int)(((byte)(101)))));
-            this.btnMapa.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMapa.FlatAppearance.BorderSize = 0;
-            this.btnMapa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnMapa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnMapa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMapa.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMapa.ForeColor = System.Drawing.Color.White;
-            this.btnMapa.Image = ((System.Drawing.Image)(resources.GetObject("btnMapa.Image")));
-            this.btnMapa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMapa.Location = new System.Drawing.Point(0, 80);
-            this.btnMapa.Name = "btnMapa";
-            this.btnMapa.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnMapa.Size = new System.Drawing.Size(202, 40);
-            this.btnMapa.TabIndex = 7;
-            this.btnMapa.Text = "Mapa";
-            this.btnMapa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMapa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMapa.UseVisualStyleBackColor = false;
-            this.btnMapa.Click += new System.EventHandler(this.btnMapa_Click);
-            // 
             // FrmMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1040, 541);
+            this.ClientSize = new System.Drawing.Size(1387, 666);
             this.Controls.Add(this.panelCentral);
             this.Controls.Add(this.panelLateral);
             this.Controls.Add(this.panelCabecera);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmMenu";
             this.Opacity = 0.99D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
