@@ -28,12 +28,15 @@ namespace Proyecto_DoñaZoila
         private static string usuario;
         private static string estado;
 
-        //Atributos necesarios registro y modificacion empleado
+        //Atributos necesarios planilla
         private static double ihss;
         private static double rap;
         private static double bono;
         private static double sueldo;
         private static double viatico;
+        private static double aguinaldo;
+        private static double debito;
+        private static string razonDebito;
 
         //Encapsulamiento
         public string Nombre { get => nombre; set => nombre = value; }
@@ -55,6 +58,9 @@ namespace Proyecto_DoñaZoila
         public double Bono { get => bono; set => bono = value; }
         public double Sueldo { get => sueldo; set => sueldo = value; }
         public double Viatico { get => viatico; set => viatico = value; }
+        public double Aguinaldo { get => aguinaldo; set => aguinaldo = value; }
+        public double Debito { get => debito; set => debito = value; }
+        public string RazonDebito { get => razonDebito; set => razonDebito = value; }
 
         //Metodo para ingresar nuevos empleados
         public int InsertarEmpleado()
@@ -69,7 +75,7 @@ namespace Proyecto_DoñaZoila
                                                 "'" + Genero + "','" + Correo + "','" + Rol + "','" + Contraseña + "'," +
                                                 "'" + Usuario + "','" + Estado + "'", sc);
                 ins.ExecuteNonQuery();
-                MessageBox.Show("Se agregó el empleado de manera correcta", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Se el empleado de manera correcta", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 var = 1;
             }
@@ -119,8 +125,10 @@ namespace Proyecto_DoñaZoila
             sc.Open();
             try
             {
-                SqlCommand ins = new SqlCommand("execute insertarPlanilla '" + CodEmpleado + "','" + Ihss + "','" + Rap + "'," +
-                                                "'" + Bono + "','" + Sueldo + "','" + Viatico + "'", sc);
+                SqlCommand ins = new SqlCommand("execute [dbo].[insertarPlanilla] '" + CodEmpleado + "', '" + Ihss + "','" + Rap + "','" + Bono + "'," +
+                                               "'" + Sueldo + "','" + Viatico + "','" + Aguinaldo + "','" + Debito + "'," +
+                                               "'" + RazonDebito + "'", sc);
+
                 ins.ExecuteNonQuery();
                 MessageBox.Show("Se realizó la planilla de manera correcta", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

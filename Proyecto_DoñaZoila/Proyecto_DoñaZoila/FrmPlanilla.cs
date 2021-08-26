@@ -37,6 +37,7 @@ namespace Proyecto_DoñaZoila
         {
             if (activeForm != null)
                 activeForm.Close();
+
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -56,11 +57,16 @@ namespace Proyecto_DoñaZoila
             empleado.Sueldo = Convert.ToDouble(txtSueldo.Text);
             empleado.Bono = Convert.ToDouble(txtBono.Text);
             empleado.Viatico = Convert.ToDouble(txtViaticos.Text);
+            empleado.Debito = Convert.ToDouble(txtDebito.Text);
+            empleado.Aguinaldo = Convert.ToDouble(txtAguinaldo.Text);
+            empleado.RazonDebito = txtAguinaldo.Text;
         }
 
         //Metodo para limpiar los textbox
         public void LimpiarCampos()
         {
+            txtAguinaldo.Clear();
+            txtDebito.Clear();
             txtCodigoEmpleado.Clear();
             txtNombreEmpleado.Clear();
             txtIhss.Clear();
@@ -68,8 +74,10 @@ namespace Proyecto_DoñaZoila
             txtSueldo.Clear();
             txtBono.Clear();
             txtViaticos.Clear();
+            cbDebito.SelectedIndex = -1;
         }
 
+        //Programación buscar empleado
         private void btnEmpleado_Click(object sender, EventArgs e)
         {
             ver.ShowDialog();
@@ -85,13 +93,14 @@ namespace Proyecto_DoñaZoila
             }
         }
 
+        //Programación generar planilla
         private void btnGenerar_Click(object sender, EventArgs e)
         {
-            if (txtCodigoEmpleado.Text == "" || txtNombreEmpleado.Text == "" || txtIhss.Text == ""
-                || txtRap.Text == "" || txtBono.Text == "" || txtSueldo.Text == "" || txtViaticos.Text == "")
-
+            if (txtCodigoEmpleado.Text.Equals("") || txtNombreEmpleado.Text.Equals("") || txtIhss.Text.Equals("")
+                || txtRap.Text.Equals("") || txtBono.Text.Equals("") || txtSueldo.Text.Equals("") || txtViaticos.Text.Equals("") 
+                || txtAguinaldo.Text.Equals("") || txtDebito.Text.Equals("") || cbDebito.SelectedIndex ==-1)
             {
-                MessageBox.Show("Llene todos los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Debe llenar y seleccionar todos los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -103,11 +112,13 @@ namespace Proyecto_DoñaZoila
             }
         }
 
+        //Programación limpiar los textbox
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
         }
 
+        //Validación
         private void txtIhss_KeyPress(object sender, KeyPressEventArgs e)
         {
             validacion.NumerosDecimales(e);
@@ -132,5 +143,16 @@ namespace Proyecto_DoñaZoila
         {
             validacion.NumerosDecimales(e);
         }
+
+        private void txtAguinaldo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacion.NumerosDecimales(e);
+        }
+
+        private void txtDebito_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacion.NumerosDecimales(e);
+        }
+        //Fin validación
     }
 }
